@@ -1,0 +1,36 @@
+:root {
+    --header-height: 60px;
+    --width-container: 70%;
+    --color-blue: rgb(59, 61, 110);
+    --color-bg: #11171b;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: var(--color-bg);
+    background-image: linear-gradient(135deg, var(--color-bg) 0%, #3c4059 100%);
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: var(--width-container);
+    margin: auto;
+}
