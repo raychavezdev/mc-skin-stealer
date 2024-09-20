@@ -1,6 +1,9 @@
 :root {
     --header-height: 60px;
     --width-container: 70%;
+
+    --br-small: 0.5rem;
+
     --color-blue: rgb(59, 61, 110);
     --color-bg: #11171b;
 }
