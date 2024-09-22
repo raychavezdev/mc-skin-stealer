@@ -1,0 +1,29 @@
+.render-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#canvas {
+    border: 1px solid rgba(240, 248, 255, 0.082);
+}
+
+.render-multimedia {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.render-multimedia button {
+    border: none;
+    padding: .8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.render-multimedia button:active {
+    transform: scale(1.05);
+}
