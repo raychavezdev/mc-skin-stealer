@@ -7,6 +7,11 @@
   padding: 0.5em;
   border-radius: 0.75em;
   cursor: pointer;
+
+}
+
+.card-container:hover .card-img img {
+  transform: scale(1.05);
 }
 
 .card-container h2 {
@@ -23,6 +28,8 @@
   border-radius: 0.5em;
 }
 
+
 .card-img img {
+  transition: transform .2s;
   width: 130px;
 }
