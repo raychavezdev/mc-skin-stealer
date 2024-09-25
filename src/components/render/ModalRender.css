@@ -10,6 +10,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
 }
 
 .modal-container {
@@ -17,11 +18,12 @@
   background-color: #0d131e;
   border: .5rem solid var(--color-blue);
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 2rem;
   position: relative;
   padding: 1rem;
   width: calc(var(--width-container) + 5em);
-  height: 600px;
+
 }
 
 
@@ -101,7 +103,15 @@
   .modal-container {
     overflow: auto;
     height: 90%;
+    gap: 1rem;
     flex-direction: column;
+  }
+
+}
+
+@media (max-width:900px) {
+  .modal-container {
+    width: calc(var(--width-container) + 13rem);
   }
 
 }

@@ -8,6 +8,9 @@ export const renderView = (skin, canvas) => {
     skin: skin,
   })
 
+  render.camera.position.x = -20
+  render.controls.enableZoom = false
+
   return render
 }
 

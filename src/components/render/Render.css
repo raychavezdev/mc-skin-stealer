@@ -7,7 +7,7 @@
 }
 
 #canvas {
-    border: 1px solid rgba(240, 248, 255, 0.082);
+    border-radius: .25rem;
 }
 
 .render-multimedia {

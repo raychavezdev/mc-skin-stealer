@@ -1,24 +1,25 @@
 .search-container {
-    height: 100px;
     display: flex;
     align-items: center;
-    justify-content: center;
+
 }
 
 .search-form {
     display: flex;
     width: 100%;
+    margin: 2rem 0;
 }
 
 .search-input {
     border: none;
     outline: none;
-    height: 3rem;
-    flex: 4;
     border-top-left-radius: var(--br-small);
     border-bottom-left-radius: var(--br-small);
-    font-size: 1.25rem;
     padding: 1rem;
+    width: 100%;
+    max-width: 100%;
+    font-size: 1.25rem;
+    flex: 4;
 }
 
 .search-btn {
