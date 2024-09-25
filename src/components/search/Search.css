@@ -22,9 +22,7 @@
 }
 
 .search-btn {
-    border: none;
     flex: 1;
     border-top-right-radius: var(--br-small);
     border-bottom-right-radius: var(--br-small);
-    cursor: pointer;
 }

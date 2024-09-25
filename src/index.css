@@ -35,7 +35,24 @@ ul {
     list-style: none;
 }
 
+p {
+    margin: 0;
+}
+
+button {
+    font-family: "Roboto", sans-serif;
+    border: none;
+    cursor: pointer;
+}
+
 .container {
     width: var(--width-container);
     margin: auto;
+}
+
+
+@keyframes appear {
+    to {
+        opacity: 1;
+    }
 }

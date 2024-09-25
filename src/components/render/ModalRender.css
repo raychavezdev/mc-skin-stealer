@@ -17,6 +17,7 @@
   background-color: #0d131e;
   border: .5rem solid var(--color-blue);
   display: flex;
+  justify-content: space-around;
   position: relative;
   padding: 1rem;
   width: calc(var(--width-container) + 5em);
@@ -24,9 +25,67 @@
 }
 
 
-
 .render-info {
   color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5 rem;
+}
+
+.render-info-card {
+  background-color: var(--color-gray);
+  padding: 1rem;
+  border-radius: .5rem;
+}
+
+.render-name {
+  font-size: 2.5rem;
+  margin-bottom: .75rem;
+}
+
+.render-uuid {
+  display: flex;
+  flex-direction: column;
+}
+
+.clip-icon {
+  opacity: 0;
+  font-size: 1.5rem;
+  stroke-width: .7;
+  animation: appear .5s forwards;
+}
+
+.uuid {
+  filter: opacity(.7);
+  cursor: pointer;
+  display: flex;
+  align-items: baseline;
+  gap: .25rem;
+}
+
+.uuid:hover {
+  filter: opacity(.9);
+}
+
+.down-btn {
+  background: linear-gradient(to top, rgb(4, 77, 40), rgb(21, 101, 148), var(--color-blue));
+  background-size: 200% 200%;
+  margin-top: .5rem;
+  color: var(--color-white);
+  padding: .5rem;
+  border-radius: .5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  text-align: center;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.down-btn:hover {
+  background-position: 10% 100%;
+  transform: scale(1.02);
 }
 
 .render-close {
@@ -35,4 +94,14 @@
   font-size: 2rem;
   right: 1rem;
   cursor: pointer;
+  top: 1rem;
+}
+
+@media (max-width:720px) {
+  .modal-container {
+    overflow: auto;
+    height: 90%;
+    flex-direction: column;
+  }
+
 }

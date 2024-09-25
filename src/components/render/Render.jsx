@@ -7,7 +7,7 @@ const Render = ({ skin }) => {
 
   useEffect(() => {
     renderView(skin, canvasRef.current)
-  })
+  }, [skin])
 
   return (
     <div className='render-container'>
