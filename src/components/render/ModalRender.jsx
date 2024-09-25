@@ -54,7 +54,7 @@ const ModalRender = ({ player, closeModal }) => {
                   )}
                 </span>
               ) : (
-                <p>Loading uuid...</p>
+                <span className='uuid'>Loading uuid...</span>
               )}
             </p>
           </div>
