@@ -7,7 +7,6 @@
   padding: 0.5em;
   border-radius: 0.75em;
   cursor: pointer;
-
 }
 
 .card-container:hover .card-img img {
@@ -15,7 +14,7 @@
 }
 
 .card-container h2 {
-  color: var(--color-white);
+  color: var(--color-text);
   font-size: 1.1rem;
   margin-top: 0.5em;
 }

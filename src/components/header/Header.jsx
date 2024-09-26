@@ -1,4 +1,5 @@
 import './Header.css'
+import ThemeButton from './ThemeButton'
 const Header = () => {
   return (
     <header className='header'>
@@ -6,7 +7,7 @@ const Header = () => {
         <a className='logo' href='#'>
           <h1 className='logo-text'>MC-Stealer</h1>
         </a>
-        <button className='btn_theme'>Dark</button>
+        <ThemeButton />
       </div>
     </header>
   )

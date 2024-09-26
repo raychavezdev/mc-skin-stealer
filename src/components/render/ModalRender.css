@@ -15,7 +15,7 @@
 
 .modal-container {
   border-radius: 0.75rem;
-  background-color: #0d131e;
+  background-color: var(--color-modal);
   border: .5rem solid var(--color-blue);
   display: flex;
   justify-content: center;
@@ -28,7 +28,7 @@
 
 
 .render-info {
-  color: var(--color-white);
+  color: var(--color-text);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -70,7 +70,7 @@
   background: linear-gradient(to top, rgb(4, 77, 40), rgb(21, 101, 148), var(--color-blue));
   background-size: 200% 200%;
   margin-top: .5rem;
-  color: var(--color-white);
+  color: white;
   padding: .5rem;
   border-radius: .5rem;
   font-size: 1.2rem;
@@ -88,7 +88,7 @@
 
 .render-close {
   position: absolute;
-  color: var(--color-white);
+  color: var(--color-text);
   font-size: 2rem;
   right: 1rem;
   cursor: pointer;
