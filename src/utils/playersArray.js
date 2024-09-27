@@ -1,5 +1,5 @@
 export const playersArray = [
-  'Rsaysk8',
+  'Raysk8',
   'Dream',
   'Technoblade',
   'GeorgeNotFound',
