@@ -34,9 +34,10 @@ const Search = ({ search, reset }) => {
           placeholder='Player name'
           onChange={handleChange}
           value={searchValue}
+          maxLength={30}
         />
         {searchValue && (
-          <button onClick={handleReset} type='button'>
+          <button className='clear-btn' onClick={handleReset} type='button'>
             <MdClear />
           </button>
         )}

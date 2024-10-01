@@ -1,0 +1,21 @@
+.hero-container {
+    color: var(--color-text);
+    margin: 2rem 0;
+}
+
+
+
+.hero-title {
+    margin-bottom: 1rem;
+    font-size: clamp(1.75rem, 5vw, 2.25rem);
+}
+
+.hero-desc {
+    display: flex;
+    flex-direction: column;
+
+    gap: .25rem;
+    font-size: clamp(.9rem, 2vw, 1rem);
+
+    opacity: .75;
+}

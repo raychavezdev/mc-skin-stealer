@@ -6,6 +6,8 @@
 
     --color-header: #101010;
     --color-bg: #11171b;
+    --color-bg-sec: #3c4059;
+
     --color-text: rgb(236, 244, 250);
     --color-blue: rgb(59, 61, 110);
     --color-gray: #25323a;
@@ -15,8 +17,10 @@
 .light {
     --color-header: #a8a6a6;
     --color-bg: #d8dadb;
+    --color-bg-sec: #d3d4da;
+
     --color-text: rgb(39, 39, 39);
-    --color-blue: rgb(92, 109, 156);
+    --color-blue: rgb(119, 133, 170);
     --color-gray: #c8c9c9;
     --color-modal: #a4a4a5;
 
@@ -28,9 +32,10 @@
 
 body {
     margin: 0;
+    min-height: 100vh;
     font-family: "Roboto", sans-serif;
     background-color: var(--color-bg);
-    background-image: linear-gradient(135deg, var(--color-bg) 0%, #3c4059 100%);
+    background-image: linear-gradient(135deg, var(--color-bg), var(--color-bg-sec));
 }
 
 h1,
@@ -73,5 +78,11 @@ button {
 @media (max-width:480px) {
     :root {
         --width-container: 90%;
+    }
+}
+
+@media (min-width:1500px) {
+    :root {
+        --width-container: 54%;
     }
 }
