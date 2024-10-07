@@ -1,3 +1,4 @@
+import CopyButton from '../copyButton/CopyButton'
 import './Share.css'
 
 const Share = () => {
@@ -6,7 +7,7 @@ const Share = () => {
       <div className='container'>
         <h3 className='share-title'>Share this website</h3>
         <div className='share-container'>
-          <p>https://mc-skin-stealer.netlify.app/</p>
+          <CopyButton text={'https://mc-skin-stealer.netlify.app/'} />
         </div>
       </div>
     </section>

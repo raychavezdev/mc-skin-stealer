@@ -14,5 +14,29 @@
 .share-container {
     border: 3px solid var(--color-blue);
     border-radius: var(--br-small);
+
+}
+
+.share-container span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: .5px;
     padding: 1rem;
+    cursor: pointer;
+    opacity: .7;
+}
+
+.share-container span:hover {
+    opacity: 1;
+}
+
+
+.share-container svg {
+    color: transparent;
+    transition: color .2s;
+}
+
+.share-container span:hover svg {
+    color: inherit;
 }

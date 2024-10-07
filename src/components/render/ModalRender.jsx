@@ -2,12 +2,10 @@ import Render from './Render'
 import './ModalRender.css'
 import { getUuid } from '../../utils/getUuid'
 import { useEffect, useState } from 'react'
-import { CiMedicalClipboard } from 'react-icons/ci'
-import { BsClipboardCheck } from 'react-icons/bs'
+import CopyButton from '../copyButton/CopyButton'
 
 const ModalRender = ({ player, closeModal }) => {
   const [uuid, setUuid] = useState()
-  const [isCopied, setIsCopied] = useState(false)
 
   useEffect(() => {
     const fetchUuid = async () => {
@@ -23,18 +21,6 @@ const ModalRender = ({ player, closeModal }) => {
     closeModal()
   }
 
-  const copyUuid = () => {
-    navigator.clipboard
-      .writeText(uuid)
-      .then(() => {
-        setIsCopied(true)
-        setTimeout(() => setIsCopied(false), 3000)
-      })
-      .catch(() => {
-        setIsCopied(false)
-      })
-  }
-
   return (
     <div className='render-modal'>
       <div className='modal-container'>
@@ -45,14 +31,7 @@ const ModalRender = ({ player, closeModal }) => {
             <p className='render-uuid'>
               <b>UUID:</b>
               {uuid ? (
-                <span className='uuid' onClick={copyUuid}>
-                  {uuid}{' '}
-                  {!isCopied ? (
-                    <CiMedicalClipboard className='clip-icon' />
-                  ) : (
-                    <BsClipboardCheck className='clip-icon' />
-                  )}
-                </span>
+                <CopyButton text={uuid} />
               ) : (
                 <span className='uuid'>Loading uuid...</span>
               )}

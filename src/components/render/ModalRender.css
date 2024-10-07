@@ -54,7 +54,7 @@
   animation: appear .5s forwards;
 }
 
-.uuid {
+.render-uuid span {
   filter: opacity(.7);
   cursor: pointer;
   display: flex;
@@ -62,7 +62,7 @@
   gap: .25rem;
 }
 
-.uuid:hover {
+.render-uuid span:hover {
   filter: opacity(.9);
 }
 
