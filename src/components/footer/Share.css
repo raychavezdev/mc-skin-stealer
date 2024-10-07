@@ -1,0 +1,18 @@
+.share-section {
+    background-color: var(--color-modal);
+    color: var(--color-text);
+    margin-top: 4rem;
+    padding: 3rem;
+}
+
+.share-section .container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.share-container {
+    border: 3px solid var(--color-blue);
+    border-radius: var(--br-small);
+    padding: 1rem;
+}

@@ -1,0 +1,13 @@
+.footer {
+    background-color: var(--color-gray);
+    height: var(--header-height);
+    color: var(--color-text);
+
+}
+
+.footer .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

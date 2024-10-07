@@ -5,6 +5,8 @@ import Search from './components/search/Search'
 import CardGrid from './components/card/CardGrid'
 import { playersArray } from './utils/playersArray'
 import { useState } from 'react'
+import Footer from './components/footer/Footer'
+import Share from './components/footer/Share'
 
 function App() {
   const [gridPlayers, setGridPlayers] = useState(playersArray)
@@ -12,11 +14,9 @@ function App() {
   const resetGridPlayers = () => {
     setGridPlayers(playersArray)
     console.log(playersArray)
-    console.log('reset')
   }
 
   const searchSubmit = nameSearch => {
-    console.log('submit')
     setGridPlayers([nameSearch])
   }
 
@@ -26,6 +26,8 @@ function App() {
       <Hero />
       <Search search={searchSubmit} reset={resetGridPlayers} />
       <CardGrid players={gridPlayers} />
+      <Share />
+      <Footer />
     </>
   )
 }
