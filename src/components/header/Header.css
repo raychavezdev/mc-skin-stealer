@@ -11,8 +11,44 @@
 
 .logo {
     color: var(--color-text);
+    display: flex;
+    gap: .5rem;
+}
+
+.logo:hover img {
+    transform: rotate(-15deg);
+}
+
+.logo:hover .logo-text {
+    filter: brightness(120%);
 }
 
 .logo-text {
     font-size: 1.5rem;
+}
+
+.logo img {
+    width: 1.5rem;
+    height: 1.5rem;
+    transition: transform .2s;
+    box-shadow: 1px 2px 1px var(--color-bg-sec);
+}
+
+.media {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-lang {
+    background-color: transparent;
+    color: white;
+    background-color: var(--color-blue);
+    border-radius: var(--br-small);
+    transition: transform .2s;
+    will-change: transform;
+}
+
+.btn-lang:hover {
+    transform: scale(1.08);
+    filter: brightness(110%);
 }

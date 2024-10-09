@@ -1,21 +1,15 @@
 import './Hero.css'
+import { useTranslation } from 'react-i18next'
 
 const Hero = () => {
+  const { t } = useTranslation()
   return (
     <div className='hero-container '>
       <div className='container'>
-        <h1 className='hero-title'>
-          Descubre y descarga skins de jugadores de Minecraft
-        </h1>
+        <h1 className='hero-title'>{t('hero.title')}</h1>
         <div className='hero-desc'>
-          <p>
-            Explora skins de minecraft y descargalas facilmente. Da click en la
-            skin que quieras obtener para verla a detalle.
-          </p>
-          <p>
-            ¡Transforma tu aventura en Minecraft con las skins que más te gusten
-            y destaca entre tus amigos!
-          </p>
+          <p>{t('hero.text')}</p>
+          <p>{t('hero.phrase')}</p>
         </div>
       </div>
     </div>

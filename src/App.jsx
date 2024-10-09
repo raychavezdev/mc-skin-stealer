@@ -13,7 +13,6 @@ function App() {
 
   const resetGridPlayers = () => {
     setGridPlayers(playersArray)
-    console.log(playersArray)
   }
 
   const searchSubmit = nameSearch => {

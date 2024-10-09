@@ -3,9 +3,11 @@ import './ModalRender.css'
 import { getUuid } from '../../utils/getUuid'
 import { useEffect, useState } from 'react'
 import CopyButton from '../copyButton/CopyButton'
+import { useTranslation } from 'react-i18next'
 
 const ModalRender = ({ player, closeModal }) => {
   const [uuid, setUuid] = useState()
+  const { t } = useTranslation()
 
   useEffect(() => {
     const fetchUuid = async () => {
@@ -41,7 +43,7 @@ const ModalRender = ({ player, closeModal }) => {
             href={`https://mc-heads.net/download/${player}`}
             className='down-btn'
           >
-            Download Skin
+            {t('modal.download')}
           </a>
         </div>
         <div className='render-close' onClick={handleClick}>

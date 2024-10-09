@@ -5,8 +5,9 @@
     border-radius: var(--br-small);
     font-size: 1.5rem;
     color: var(--color-text);
-    background-color: transparent;
+    background-color: var(--color-gray);
     transition: transform .2s;
+    will-change: transform;
 }
 
 .btn-theme:hover {

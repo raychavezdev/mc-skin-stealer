@@ -42,6 +42,7 @@ const Card = ({ name }) => {
             <img
               src={`https://mc-heads.net/body/${name}`}
               alt={`Skin de ${name}`}
+              loading='lazy'
             />
           )}
         </div>

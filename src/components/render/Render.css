@@ -26,11 +26,11 @@
     font-size: 1.5rem;
     border-radius: var(--br-small);
     color: white;
+    transition: transform .2s;
+    will-change: transform;
 }
 
-.render-multimedia button:active {
-    transform: scale(1.05);
-}
+
 
 .render-multimedia button:nth-child(1) {
     background-color: rgb(21, 101, 148);
@@ -38,4 +38,12 @@
 
 .render-multimedia button:nth-child(2) {
     background-color: var(--color-blue);
+}
+
+.render-multimedia button:hover {
+    transform: scale(1.05);
+}
+
+.render-multimedia button:active {
+    transform: scale(1.1);
 }

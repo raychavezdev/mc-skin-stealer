@@ -2,7 +2,7 @@
     background-color: var(--color-modal);
     color: var(--color-text);
     margin-top: 4rem;
-    padding: 3rem;
+    padding: 3rem 0;
 }
 
 .share-section .container {

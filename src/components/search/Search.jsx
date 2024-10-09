@@ -1,10 +1,12 @@
 import { useRef, useState } from 'react'
 import './Search.css'
 import { MdClear } from 'react-icons/md'
+import { useTranslation } from 'react-i18next'
 
 const Search = ({ search, reset }) => {
   const searchRef = useRef()
   const [searchValue, setSearchValue] = useState('')
+  const { t } = useTranslation()
 
   const handleSubmit = e => {
     e.preventDefault()
@@ -31,7 +33,7 @@ const Search = ({ search, reset }) => {
           ref={searchRef}
           className='search-input'
           type='text'
-          placeholder='Player name'
+          placeholder={`${t('search.input')}`}
           onChange={handleChange}
           value={searchValue}
           maxLength={30}
@@ -42,7 +44,7 @@ const Search = ({ search, reset }) => {
           </button>
         )}
         <button className='search-btn' type='submit'>
-          Search
+          {t('search.button')}
         </button>
       </form>
     </div>

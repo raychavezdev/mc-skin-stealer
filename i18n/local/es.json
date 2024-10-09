@@ -1,0 +1,17 @@
+{
+  "hero": {
+    "title": "Descubre y descarga skins de jugadores de Minecraft",
+    "text": "Explora skins de minecraft y descargalas facilmente. Da click en la skin que quieras obtener para verla a detalle.",
+    "phrase": " ¡Transforma tu aventura en Minecraft con las skins que más gusten y destaca entre tus amigos!"
+  },
+  "search": {
+    "input": "Nombre de jugador",
+    "button": "Buscar"
+  },
+  "modal": {
+    "download": "Descargar Skin"
+  },
+  "share": {
+    "title": "Comparte este sitio"
+  }
+}

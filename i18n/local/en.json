@@ -1,0 +1,17 @@
+{
+  "hero": {
+    "title": "Discover and Download Minecraft Player Skins",
+    "text": "Explore Minecraft skins and easily download them. Click on the skin you want to see in detail.",
+    "phrase": "Transform your Minecraft adventure with the skins you like the most and stand out among your friends!"
+  },
+  "search": {
+    "input": "Player name",
+    "button": "Search"
+  },
+  "modal": {
+    "download": "Download Skin"
+  },
+  "share": {
+    "title": "Share this website"
+  }
+}
